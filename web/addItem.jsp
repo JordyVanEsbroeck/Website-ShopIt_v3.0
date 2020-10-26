@@ -32,10 +32,10 @@
         <p >Welkom, voeg onderaan je items toe</p>
     </section>
     <section class="form">
-        <form  class = "input" method="POST" action="Servlet">
-            <label for="Item">Item :</label><input type="text" name="Item" id="Item" required><br>
-            <label for="Prijs">Prijs :</label><input type="text" name="Prijs" id="Prijs" required> <br>
-            <label for="Hoeveelheid">Hoeveelheid :</label><input type="text" name="Hoeveelheid"id="Hoeveelheid" required><br>
+        <form  class = "input" method="POST" action="Servlet" novalidate>
+            <label for="Naam">Item :</label><input type="text" name="Naam" id="Naam"><br>
+            <label for="Prijs">Prijs :</label><input type="text" name="Prijs" id="Prijs"> <br>
+            <label for="Hoeveelheid">Hoeveelheid :</label><input type="text" name="Hoeveelheid"id="Hoeveelheid"><br>
             <input type="submit" value="Submit">
         </form>
     </section>

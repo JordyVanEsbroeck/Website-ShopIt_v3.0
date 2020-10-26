@@ -36,12 +36,16 @@
                 <th>Item</th>
                 <th>Prijs</th>
                 <th>Hoeveelheid</th>
+                <th>Verwijder</th>
             </tr>
             <% for (ShopList shopList:lijst){%>
             <tr>
                 <td><%=shopList.getNaam()%></td>
                 <td><%=shopList.getPrijs()%></td>
                 <td><%=shopList.getHoeveelheid()%></td>
+                <td>
+
+                </td>
 
             </tr>
             <%}%>
