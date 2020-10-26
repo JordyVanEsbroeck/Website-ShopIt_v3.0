@@ -25,8 +25,12 @@
     </nav>
 </header>
 <main>
+    <section class="titel">
         <h1 >Add Items</h1>
+    </section>
+    <section class="intro">
         <p >Welkom, voeg onderaan je items toe</p>
+    </section>
     <section class="form">
         <form  class = "input" method="POST" action="Servlet">
             <label for="Item">Item :</label><input type="text" name="Item" id="Item" required><br>

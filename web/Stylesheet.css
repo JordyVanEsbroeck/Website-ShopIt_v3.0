@@ -116,7 +116,7 @@ li>a:hover {
     text-decoration: black underline;
 
 }
-main {
+main > section {
     padding-top: 25px;
     max-width: 22em;
     display:flex;
@@ -126,12 +126,12 @@ main {
     margin:auto;
 
 }
-h1{
+section.titel{
     font-size:2em;
     grid-column :2/3;
     grid-row :1/2;
 }
-main>p{
+section.intro{
     grid-column :2/3;
     grid-row :2/3;
 }
