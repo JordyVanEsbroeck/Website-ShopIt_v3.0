@@ -21,9 +21,9 @@ public class Controller extends HttpServlet {
         String hoeveelheid = request.getParameter("Hoeveelheid");
 
         try {
-            int intprijs = Integer.parseInt(prijs);
-            int inthoeveelheid = Integer.parseInt(hoeveelheid);
-            shopListDB.NextItem(new ShopList(naam,intprijs,inthoeveelheid));
+            double intprijs = Double.parseDouble(prijs);
+            int intHoeveelheid = Integer.parseInt(hoeveelheid);
+            shopListDB.NextItem(new ShopList(naam,intprijs,intHoeveelheid));
         }
         catch(Exception e) {
             RequestDispatcher view = request.getRequestDispatcher("additem.jsp");

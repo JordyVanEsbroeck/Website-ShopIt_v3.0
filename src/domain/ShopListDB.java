@@ -17,6 +17,14 @@ public class ShopListDB{
         }
         this.lijst.add(nieuwItem);
     }
+    public void verwijder(String naam){
+        for (ShopList shopList:lijst){
+            if(naam == shopList.getNaam()){
+                this.lijst.remove(shopList);
+            }
+        }
+
+    }
     public double gemiddeldePrijs(){
         double uit = 0;
         if (lijst.size() == 1){
