@@ -38,7 +38,8 @@ public class Controller extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("gemiddeldePrijs",shopListDB.gemiddeldePrijs());
+        double o = shopListDB.gemiddeldePrijs();
+        request.setAttribute("gemiddeldePrijs", o);
         request.setAttribute("lijst",shopListDB.getLijst());
 
         RequestDispatcher view = request.getRequestDispatcher("overview.jsp");

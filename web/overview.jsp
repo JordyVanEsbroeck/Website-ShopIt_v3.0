@@ -54,8 +54,9 @@
     </section>
     <section>
         <p>
-            <% double gemiddeldePrijs = (double)request.getAttribute("gemiddeldePrijs");%>
-            De gemiddelde prijs is <%=gemiddeldePrijs%>.
+            <% double gemiddeldePrijs = (double)request.getAttribute("gemiddeldePrijs");
+            if(gemiddeldePrijs != 0){%>
+            De gemiddelde prijs is <%=gemiddeldePrijs%>.<%}%>
         </p>
     </section>
 
